@@ -29,7 +29,7 @@ using System.Text;
 
 //                       End Here
 
-new Homework().Task_1();
+new Homework().Task_6();
 
 class Homework
 {
@@ -104,13 +104,13 @@ class Homework
     {
         //It is what it is
 
-        //string str1 = Console.ReadLine(); 
-        //string str2 = str1.Substring(2);
-        //string str3 = str1.Substring(1);
-        //string str4 = str1.Substring(2);
-        //string str5 = string.Join(str2, str4);
+        //string str1 = Console.ReadLine();
+        //string str2 = str1.Substring(3);
+        //string str3 = str1.Substring(0, str1.Length - 13);
+        //string[] arr1 = new string[] { str2 };
+        //string str4 = string.Join(str3, arr1);// idk how to do this. "Join" does't want to use the first parametr. I've already broken my brain.  
 
-        //Console.WriteLine(str5);
+        //Console.WriteLine(str4);
 
 
         //Console.ReadLine();
@@ -118,19 +118,19 @@ class Homework
     public void Task_6()
     {
         //the roses are red the violets are blue
-        //white, black
+        // white, black
         //string str1 = Console.ReadLine();
         //string str2 = Console.ReadLine();
 
         //string[] arr1 = str2.Split(new char[] { ',' });
         //string str3 = arr1[0];
         //string str4 = arr1[1];
-        //str4 = str4.Substring(1);
+        //str4 = str4.Trim(new char[] { ' ' });
 
-        //string str5 = str1.Replace("red", str3);
-        //string str6 = str5.Replace("blue", str4);
+        //str1.Replace("red", str3);
+        //str1.Replace("blue", str4);
 
-        //Console.WriteLine(str6);
+        //Console.WriteLine(str1);
     }
     public void Task_7()
     {
