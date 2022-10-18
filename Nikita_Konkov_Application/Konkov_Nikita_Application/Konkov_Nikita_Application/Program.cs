@@ -29,7 +29,7 @@ using System.Text;
 
 //                       End Here
 
-new Homework().Task_6();
+new Homework().Task_5();
 
 class Homework
 {
@@ -104,13 +104,13 @@ class Homework
     {
         //It is what it is
 
-        //string str1 = Console.ReadLine();
-        //string str2 = str1.Substring(3);
-        //string str3 = str1.Substring(0, str1.Length - 13);
-        //string[] arr1 = new string[] { str2 };
-        //string str4 = string.Join(str3, arr1);// idk how to do this. "Join" does't want to use the first parametr. I've already broken my brain.  
+        string str1 = Console.ReadLine();
+        string str2 = str1.Substring(3);
+        string str3 = str1.Substring(0, 3);
+        string[] arr1 = new string[] { str2 };
+        string str4 = string.Join(str3, arr1);// idk how to do this. "Join" does't want to use the first parametr. I've already broken my brain.  
 
-        //Console.WriteLine(str4);
+        Console.WriteLine(str4);
 
 
         //Console.ReadLine();
