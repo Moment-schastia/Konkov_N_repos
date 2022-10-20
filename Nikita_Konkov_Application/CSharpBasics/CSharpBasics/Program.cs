@@ -4,7 +4,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-new Homework_2().Task_7();
+new Homework_2().Task_9();
 
 class Homework_2 {
     public void Task_1()
@@ -103,7 +103,6 @@ class Homework_2 {
         //double num5 = 21.21;
         //double num6 = num4-- - num5 / 3.141;
         ////53.22 - 21.21 / 3.141 = 53.22 - 6.7526 = 46.4673
-        //Console.WriteLine(num6);
 
     }
     public void Task_7()
@@ -130,5 +129,23 @@ class Homework_2 {
         //Console.WriteLine(comp5);
 
         //Console.ReadLine();
+    }
+    public void Task_8()
+    {
+        //double weight = 71.666;
+        //object wToo = weight;
+
+        //double wAlso = (double)wToo;
+
+        
+    }
+    public void Task_9()
+    {
+        //int num1 = 32;
+        //int num2 = 68;
+
+        //long numLon1 = num1; // implicit conversion
+        //long numLon2 = (long)(num1 + num2); //explicit conversion
+
     }
 }
