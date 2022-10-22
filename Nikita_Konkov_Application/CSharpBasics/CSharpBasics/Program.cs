@@ -4,7 +4,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-new Homework_2().Task_9();
+new Homework_2().Task_10();
 
 class Homework_2 {
     public void Task_1()
@@ -107,8 +107,7 @@ class Homework_2 {
     }
     public void Task_7()
     {
-        //int num1 = 6; // int num1 = 7; for false 
-        //int num2 = 6;
+
         //bool equa1 = num1 == num2;
         //Console.WriteLine(equa1);
 
@@ -148,4 +147,7 @@ class Homework_2 {
         //long numLon2 = (long)(num1 + num2); //explicit conversion
 
     }
+
+
+    
 }
