@@ -137,5 +137,16 @@ class Homework_4
         //    Console.WriteLine($"Perimetr of Triang is {result}");
         //    Console.ReadLine();
     }
+    public void Task_5()
+    {
+        double sideTriangle = 12;
 
+        void SquareCounter (double sideTriangle)  {
+
+            double halfperimetr = (sideTriangle + sideTriangle + sideTriangle) / 2;
+            double Square = Math.Sqrt(halfperimetr * (halfperimetr - sideTriangle) * (halfperimetr - sideTriangle) * (halfperimetr - sideTriangle));
+
+            Console.WriteLine(Square);
+        }
+    }
 }
