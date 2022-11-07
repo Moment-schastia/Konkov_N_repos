@@ -10,11 +10,11 @@ namespace CSharpOOP3
     abstract class Shape
     {
         private string _name;
+        public string Name { get => _name; set => _name = value; }
 
-
-        public Shape(string Name)
+        public Shape(string Aname)
         {
-            _name = Name;
+            Aname = Name;
         }
 
 
@@ -26,40 +26,6 @@ namespace CSharpOOP3
 
         }
 
-
-
-
-
-
-
-
-
-
-
-        //public string Name;
-        //public string Dtype;
-        //public double Volume;
-        //public double Perimetr;
-        //private string _color = "blue";
-
-
-
-        //public Shape(string name, string dtype)
-        //{
-        //    Name = name;
-        //    Dtype = dtype;
-        //}
-
-        //public virtual string color 
-        //{ 
-        //    get
-        //    { return _color;}
-        //}
-
-        //public virtual void GetDiretionsType()
-        //{
-        //    Console.WriteLine($"Direction type is {Dtype}");
-        //}
 
     }
 

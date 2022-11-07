@@ -23,7 +23,7 @@ namespace CSharpOOP3
 
         public override double GetVolumeShape()
         {
-            double volumeCylinder = Math.PI * Math.Pow(Radius, 2) * Height;
+            double volumeCylinder = Math.Round(Math.PI * Math.Pow(Radius, 2) * Height);
             return volumeCylinder;
         }
 

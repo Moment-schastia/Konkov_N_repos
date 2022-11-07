@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 namespace CSharpOOP3
 {
     internal class Ball: Shape
+
     {
-        internal string Name;
-        internal double Radius;
+        public string Name;
+        public double Radius;
 
 
         public Ball(string name, double radius): base(name)
@@ -22,7 +23,7 @@ namespace CSharpOOP3
 
         public override double GetVolumeShape()
         {
-            double volumeBall = (1.33333 * Math.PI) * Math.Pow(Radius, 3);
+            double volumeBall = Math.Round(((4 * Math.PI * Math.Pow(Radius, 3)) / 3));
 
             return volumeBall;
         }
@@ -32,27 +33,6 @@ namespace CSharpOOP3
         {
             Console.WriteLine($"The Radius of the shape(Ball) {Name} is {Radius}, and the volume is {GetVolumeShape()}.");
         }
-
-
-
-
-
-
-
-
-
-        //public Ball(string name, string dtype, double volume, double perimetr) : base(name, dtype)
-        //{
-        //  Volume = volume;
-        //  Perimetr = perimetr;
-        //}
-
-        //public override string color => base.color ;
-
-        //public override void GetDiretionsType()
-        //{
-        //    Console.WriteLine("This unpleasant type is 3d always");
-        //}
 
     }
 }

@@ -25,7 +25,7 @@ namespace CSharpOOP3
 
         public override double GetVolumeShape()
         {
-            double volumePyramid = (S / 3) * Height;
+            double volumePyramid = Math.Round((S / 3) * Height);
             return volumePyramid;
         }
 
@@ -38,9 +38,5 @@ namespace CSharpOOP3
 
 
 
-        //public Pyramid(string name, string dtype): base(name, dtype)
-        //{
-
-        //}
     }
 }
