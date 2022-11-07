@@ -8,18 +8,15 @@ using System.Threading.Tasks;
 namespace CSharpOOP3
 {
     internal class Ball: Shape
-
     {
-        public string Name;
+        private string aNameBall;
         public double Radius;
-
 
         public Ball(string name, double radius): base(name)
         {
-            Name = name;
+            aNameBall = name;
             Radius = radius;
         }
-
 
         public override double GetVolumeShape()
         {
@@ -27,7 +24,6 @@ namespace CSharpOOP3
 
             return volumeBall;
         }
-
 
         public override void ShapeInfo()
         {

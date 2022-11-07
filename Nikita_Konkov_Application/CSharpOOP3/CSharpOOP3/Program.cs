@@ -40,7 +40,6 @@
 
 //cylinderChaplin.ShapeInfo();
 
-
 // =============== TASK 2 ==============================
 
 //Console.Write("Enter name of student: "); 

@@ -8,25 +8,22 @@ namespace CSharpOOP3
 {
     internal class Cylinder: Shape
     {
-        public string Name;
+        private string aNameBall;
         public double Height;
         public double Radius;
 
-
         public Cylinder(string name, double height, double radius) : base(name)
         {
-            Name = name;
+            aNameBall = name;
             Height = height;
             Radius = radius;
         }
-
 
         public override double GetVolumeShape()
         {
             double volumeCylinder = Math.Round(Math.PI * Math.Pow(Radius, 2) * Height);
             return volumeCylinder;
         }
-
 
         public override void ShapeInfo()
         {

@@ -10,18 +10,16 @@ namespace CSharpOOP3
 {
     internal class Pyramid: Shape
     {
-        public string Name;
+        private string aNamePira;
         public double Height;
         public double S;
 
-
         public Pyramid(string name, double height, double s) : base(name)
         {
-            Name = name;
+            aNamePira = name;
             Height = height;
             S = s;
         }
-
 
         public override double GetVolumeShape()
         {
@@ -29,14 +27,9 @@ namespace CSharpOOP3
             return volumePyramid;
         }
 
-
         public override void ShapeInfo()
         {
             Console.WriteLine($"The height of the shape(Pyramid) {Name} is {Height} its base area is {S}, and the volume is {GetVolumeShape()}.");
         }
-
-
-
-
     }
 }

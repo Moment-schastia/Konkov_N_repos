@@ -12,25 +12,16 @@ namespace CSharpOOP3
         private string _name;
         public string Name { get => _name; set => _name = value; }
 
-        public Shape(string Aname)
+        public Shape(string aName)
         {
-            Aname = Name;
+            aName = Name;
         }
-
 
         public abstract double GetVolumeShape();
 
-
         public virtual void ShapeInfo()
         {
-
+            Console.WriteLine($"The volume is {GetVolumeShape()}.");
         }
-
-
     }
-
-
-
-    
-
 }
