@@ -5,7 +5,6 @@ using System.Security.Cryptography.X509Certificates;
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using System.Collections.Specialized;
-using CSharpOOP2;
 using System.Net;
 
 
@@ -19,6 +18,20 @@ using System.Net;
 //    "The mind is everything. What you think you become",
 //    "A wolf is weaker than а lion, but he doesn't perform in the circus"
 //};
+
+//int total = linesList.Sum(s => s.Length);
+//bool isEnough = total > 5;
+// if (isEnough)
+//{
+//    Console.WriteLine(linesList.First());
+//    Console.WriteLine(linesList.Last());
+//} else
+//{
+//    foreach (var l in linesList)
+//     Console.WriteLine(l);
+//}
+
+//Console.ReadLine();
 
 //linesList.Sum();
 
