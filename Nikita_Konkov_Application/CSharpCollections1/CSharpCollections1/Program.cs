@@ -50,94 +50,94 @@ using System.Xml.Linq;
 
 //=====================Task 4 
 
-//Citizen nickCitizen = new Citizen
-//{
-//Name = "Nick",
-//LastName = "Sadov",
-//FatherName = "Petrovich",
-//AdresStreet = "Romanovskaya",
-//AdresHouse = 44,
-//Birthday = new DateTime(1991, 01, 12)
-//};
+Citizen nickCitizen = new Citizen
+{
+Name = "Nick",
+LastName = "Sadov",
+FatherName = "Petrovich",
+AdresStreet = "Romanovskaya",
+AdresHouse = 44,
+Birthday = new DateTime(1991, 01, 12)
+};
 
-//Citizen robertCitizen = new Citizen
-//{
-//Name = "Robert",
-//LastName = "Gadov",
-//FatherName = "Nikolaevich",
-//AdresStreet = "Sovetskaya",
-//AdresHouse = 44,
-//Birthday = new DateTime(2001, 11, 10)
-//};
+Citizen robertCitizen = new Citizen
+{
+Name = "Robert",
+LastName = "Gadov",
+FatherName = "Nikolaevich",
+AdresStreet = "Sovetskaya",
+AdresHouse = 44,
+Birthday = new DateTime(2001, 11, 10)
+};
 
-//Citizen ameliCitizen = new Citizen
-//{
-//Name = "Ameli",
-//LastName = "Rose",
-//FatherName = "Ivanovna",
-//AdresStreet = "Belino",
-//AdresHouse = 44,
-//Birthday = new DateTime(2005, 01, 01)
-//};
+Citizen ameliCitizen = new Citizen
+{
+Name = "Ameli",
+LastName = "Rose",
+FatherName = "Ivanovna",
+AdresStreet = "Belino",
+AdresHouse = 44,
+Birthday = new DateTime(2005, 01, 01)
+};
 
-//Citizen gotaroCitizen = new Citizen
-//{
-//Name = "Gotaro",
-//LastName = "Goske",
-//FatherName = "Gokevich",
-//AdresStreet = "Krestyanskya",
-//AdresHouse = 12,
-//Birthday = new DateTime(1975, 08, 07)
-//};
+Citizen gotaroCitizen = new Citizen
+{
+Name = "Gotaro",
+LastName = "Goske",
+FatherName = "Gokevich",
+AdresStreet = "Krestyanskya",
+AdresHouse = 12,
+Birthday = new DateTime(1975, 08, 07)
+};
 
-//Citizen aleksandrCitizen = new Citizen
-//{
-//Name = "Aleksandr",
-//LastName = "Dyaktyarev",
-//FatherName = "Evgenevich",
-//AdresStreet = "Krestyanskya",
-//AdresHouse = 12,
-//Birthday = new DateTime(1992, 09, 11)
-//};
+Citizen aleksandrCitizen = new Citizen
+{
+Name = "Aleksandr",
+LastName = "Dyaktyarev",
+FatherName = "Evgenevich",
+AdresStreet = "Krestyanskya",
+AdresHouse = 12,
+Birthday = new DateTime(1992, 09, 11)
+};
 
-//Citizen katyCitizen = new Citizen
-//{
-//Name = "Katy",
-//LastName = "Grose",
-//FatherName = "Romanovna",
-//AdresStreet = "Adskaya",
-//AdresHouse = 12,
-//Birthday = new DateTime(2008, 10, 22)
-//};
+Citizen katyCitizen = new Citizen
+{
+Name = "Katy",
+LastName = "Grose",
+FatherName = "Romanovna",
+AdresStreet = "Adskaya",
+AdresHouse = 12,
+Birthday = new DateTime(2008, 10, 22)
+};
 
-//List<Citizen> allOfCitizens = new List<Citizen> { nickCitizen, ameliCitizen, robertCitizen, gotaroCitizen, aleksandrCitizen, katyCitizen };
+List<Citizen> allOfCitizens = new List<Citizen> { nickCitizen, ameliCitizen, robertCitizen, gotaroCitizen, aleksandrCitizen, katyCitizen };
 
-//List<Citizen> votersCitizen = allOfCitizens
-//    .FindAll(c => c.GetAge(c.Birthday) >= 18);
-//votersCitizen.Sort((c,v) => c.AdresStreet.CompareTo(v.AdresStreet));
+List<Citizen> votersCitizen = allOfCitizens
+    .FindAll(c => c.GetAge(c.Birthday) >= 18);
+votersCitizen.Sort((c, v) => c.AdresStreet.CompareTo(v.AdresStreet));
 
-//class Citizen
-//{
-//    public string Name;
-//    public string LastName;
-//    public string FatherName;
-//    public string AdresStreet;
-//    public int AdresHouse;
-//    public DateTime Birthday;
+class Citizen
+{
+    public string Name;
+    public string LastName;
+    public string FatherName;
+    public string AdresStreet;
+    public int AdresHouse;
+    public DateTime Birthday;
 
-//    public Citizen()
-//    {
+    public Citizen()
+    {
 
-//    }
+    }
 
-//    public int GetAge(DateTime birth)
-//    {
-//        DateTime dateTime = new DateTime(1, 1, 1);
-//        var timespan = (DateTime.Now - birth).Duration();
-//        int age = (dateTime + timespan).Year - 1;
-//        return age;
-//    }
-//}
+    public int GetAge(DateTime birth)
+    {
+        DateTime dateTime = new DateTime(1, 1, 1);
+        var timespan = (DateTime.Now - birth).Duration();
+        int age = (dateTime + timespan).Year - 1;
+        return age;
+    }
+}
 
 
 //=================================Task 3
