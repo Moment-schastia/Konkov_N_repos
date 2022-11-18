@@ -6,10 +6,11 @@ using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Net;
+using CSharpOOP2;
 
 
 // Task 9 
-//Book Somebook = new Book();
+  Book Somebook = new Book();
 
 // Task 8
 //List<string> linesList = new List<string>
