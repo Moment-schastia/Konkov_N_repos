@@ -34,7 +34,7 @@ Console.WriteLine($"\"{bookIt.Tittle}\" in our posession {books_It_left}");
 bookIt.PageWithSecret = 777;
 
 // the method wich takes bookIt (Author, Tittle etc)
-BookInfo.InfoBookIt(bookIt);
+bookIt.IfAffordable();
 
 // the method wich takes bookIt Cost and return discaunted cost
 var deccontedCost = BookInfo.BooItCostWithDiscaunter(bookIt);
