@@ -1,7 +1,10 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Linq;
+using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 
 
+#region Old tasks 
 // =========== TASK_1 ================
 
 //Console.Write("Enter a quantity of food portions - ");
@@ -129,54 +132,120 @@ Polymorphism. Many games have character classes. There is an archer class and th
 Abstraction. In many films, especially with a small budget, the characters are shown in the simplest possible way, demonstrating only its key features and capabilities (the old Gadzila).
 */
 
-new Homework_4();
+//new Homework_4();
 
-class Homework_4
+//class Homework_4
+//{
+//    public float AnOrder(float item, float itemCost, float discount)
+//    {
+//        float theSumCost = item * itemCost;
+//        float theDiscount = theSumCost * discount / 100;
+
+//        return theSumCost - theDiscount;
+//    }
+//    public float SeveralItemCaunter(params float[] orderedIems)
+//    {
+//        float result = 0;
+//        foreach (var n in orderedIems)
+//        {
+//            result += n;
+
+//        }
+//        return result;
+//    }
+//    public float AnOrderOptionalQuantity(float itemCost, float discount, float item = 10)
+//    {
+//        float theSumCost = item * itemCost;
+//        float theDiscount = theSumCost * discount / 100;
+
+//        return theSumCost - theDiscount;
+//    }
+//    public int PerimeterCaunter(params int[] sidesInArray)
+//    {
+//        int result = 0;
+//        foreach (var n in sidesInArray)
+//        {
+//            result += n;
+
+//        }
+//        return result;
+//    }
+//    public double SquareCounter(double sideTriangle, double height)
+//    {
+//        double traingleSquare = (sideTriangle * height) / 2;
+
+//        return traingleSquare;
+//    }
+//    public double SquareCounter(double radius)
+//    {
+//        double circleSquare = Math.PI * (radius * radius);
+
+//        return circleSquare;
+//    }
+//}
+
+
+#endregion
+#region Task 1
+//Console.Write("Enter the sum which you want to convert from BYN: ");
+//float moneyFrom = float.Parse(Console.ReadLine());
+
+//Console.Write("Choose currency (USD/EUR): ");
+//string currency = Console.ReadLine();
+
+//Converter converter = new Converter();
+//converter.ConvertInfo(moneyFrom, currency);
+
+//public class Converter
+//{
+//    public float BynToEurOrUsd(string currency, float byn)
+//    {
+//        if (currency == "USD" || currency == "usd")
+//        {
+//            return BynToUsd(byn);
+//        }
+//        else if (currency == "EUR" || currency == "eur")
+//        {
+//            return byn /= 2.6f;
+//        }
+//        else // do switch and throw 
+//        {
+//            byn = 0;
+//        }
+//        return byn;
+//    }
+
+//    public float BynToUsd(float byn)
+//    {
+//        return byn /= 2.5f;
+//    }
+
+//    public void ConvertInfo(float moneyFrom, string currency)
+//    {
+//        bool castyl = BynToEurOrUsd(currency, moneyFrom) != 0;
+//        if (castyl)
+//        {
+//            Console.WriteLine($"{moneyFrom} BYN is equal to {BynToEurOrUsd(currency, moneyFrom)} {currency}");
+//        }
+//        else
+//        {
+//            Console.WriteLine("Unexpected currency");
+//        }
+//    }
+//}
+#endregion
+#region Task 3
+// Создайте метод, который принимает в себя список символов и выводит их одной строкой. Символы считать по одному из консоли.
+Console.WriteLine("Enter some signs! ");
+char sign = char.Parse(Console.ReadLine());
+List<char> charList = new List<char>();
+charList.Add();
+ToOneLine(charList);
+
+
+void ToOneLine(List<char> chars)
 {
-    public float AnOrder(float item, float itemCost, float discount)
-    {
-        float theSumCost = item * itemCost;
-        float theDiscount = theSumCost * discount / 100;
-
-        return theSumCost - theDiscount;
-    }
-    public float SeveralItemCaunter(params float[] orderedIems)
-    {
-        float result = 0;
-        foreach (var n in orderedIems)
-        {
-            result += n;
-
-        }
-        return result;
-    }
-    public float AnOrderOptionalQuantity(float itemCost, float discount, float item = 10)
-    {
-        float theSumCost = item * itemCost;
-        float theDiscount = theSumCost * discount / 100;
-
-        return theSumCost - theDiscount;
-    }
-    public int PerimeterCaunter(params int[] sidesInArray)
-    {
-        int result = 0;
-        foreach (var n in sidesInArray)
-        {
-            result += n;
-
-        }
-        return result;
-    }
-    public double SquareCounter(double sideTriangle, double height)
-    {
-        double traingleSquare = (sideTriangle * height) / 2;
-
-        return traingleSquare;
-    }
-    public double SquareCounter(double radius)
-    {
-        double circleSquare = Math.PI * (radius * radius);
-
-        return circleSquare;
-    }
+    Console.WriteLine(string.Join(" ", chars));
 }
+
+#endregion
