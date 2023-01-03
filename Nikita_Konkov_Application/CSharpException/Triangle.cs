@@ -17,6 +17,9 @@ namespace CSharpException
             get => _firstSide;
             set
             {
+                if (value <= 0)
+                    throw new UnsuitableZeroValue("The side cannot be zero");
+
                 _firstSide = value;
             }
         }
@@ -25,7 +28,9 @@ namespace CSharpException
             get => _secondSide;
             set
             {
-                value = ZeroCheck(SecondSide);
+                if (value <= 0)
+                    throw new UnsuitableZeroValue("The side cannot be zero");
+
                 _secondSide = value;
             }
         }      
@@ -35,6 +40,9 @@ namespace CSharpException
             get => _thirdSide;
             set
             {
+                if (value <= 0)
+                    throw new UnsuitableZeroValue("The side cannot be zero");
+
                 _thirdSide = value;
             }
         }

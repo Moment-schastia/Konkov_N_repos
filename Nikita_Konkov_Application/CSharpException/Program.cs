@@ -12,18 +12,18 @@ do
     {
         triangle.FirstSide = firstSide;
 
-        triangle.FirstSide = secondSide;
+        triangle.SecondSide = secondSide;
 
-        triangle.FirstSide = thirdSide;
+        triangle.ThirdSide = thirdSide;
     }
 
     catch (UnsuitableZeroValue ex)
     {
         Console.WriteLine(ex.Message);
-       
-        triangle.ZeroCheck(firstSide);
-        triangle.ZeroCheck(secondSide);
-        triangle.ZeroCheck(thirdSide);
+
+        firstSide = triangle.ZeroCheck(firstSide);
+        secondSide = triangle.ZeroCheck(secondSide);
+        thirdSide = triangle.ZeroCheck(thirdSide);
     }
 
 } while (triangle.IsZero(firstSide) || triangle.IsZero(secondSide) || triangle.IsZero(thirdSide));
