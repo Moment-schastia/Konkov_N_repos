@@ -35,7 +35,7 @@ namespace Selenium_Basics_2
             Assert.AreEqual(_epamSearchResultAutomation, _webDriver.Url, "You are not in Automation search page!");
 
             var automatinResultList = _webDriver.FindElements(By.XPath("//*[@class=\"search-results__item\"]")).Take(5);
-            var sortedResultList = automatinResultList.Where(l => l.Text.Contains(wordToSearch));
+            var sortedResultList = automatinResultList.Where(l => l.Text.Contains(wordToSearch)).ToList();// регистра чувствительность, либо ту ловер 
             Assert.AreEqual(automatinResultList, sortedResultList, "The search results are not correct");
         }
 
@@ -49,11 +49,12 @@ namespace Selenium_Basics_2
             _webDriver.FindElement(By.XPath("//*[@class = \"header-search__submit\"]")).Click();
             Assert.AreEqual(_epamSearchResultBusinAnalys, _webDriver.Url, "You are not in Automation search page!");
 
-            var firstSearchResult = _webDriver.FindElement(By.XPath("//*[@class = 'search-results__item']"));// i don't why, but appears not clickable element exception. I've tried defferent xpathes  
+            var firstSearchResult = _webDriver.FindElement(By.XPath("//*[@class = 'search-results__item']//a"));
+
             firstSearchResult.Click();
             var firstResulrPage= _webDriver.FindElement(By.XPath("//*[contains(@class, 'title-ui title--center')]"));
             Assert.AreEqual(firstSearchResult.Text, firstResulrPage.Text, "Title of first result is not equal to its page title");
-        }
+        }// закрыть куки 
 
         [TearDown]
         public void End()
